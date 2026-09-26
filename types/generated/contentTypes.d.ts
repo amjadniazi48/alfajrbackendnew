@@ -459,6 +459,7 @@ export interface ApiAchievementAchievement extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    description: Schema.Attribute.RichText;
     frontImage: Schema.Attribute.Media<'images'>;
     gallery: Schema.Attribute.Media<'images', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -586,7 +587,7 @@ export interface ApiHighlightHighlight extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Blocks;
+    description: Schema.Attribute.RichText;
     frontImage: Schema.Attribute.Media<'images'>;
     imageGallery: Schema.Attribute.Media<'images', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -669,7 +670,7 @@ export interface ApiMessageMessage extends Struct.CollectionTypeSchema {
       'api::message.message'
     > &
       Schema.Attribute.Private;
-    message: Schema.Attribute.Blocks;
+    message: Schema.Attribute.RichText;
     messagesubtitle: Schema.Attribute.String;
     messagetitle: Schema.Attribute.String;
     name: Schema.Attribute.String;

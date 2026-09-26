@@ -31,7 +31,7 @@
       "type": "string"
     },
     "message": {
-      "type": "blocks"
+      "type": "richtext"
     },
     "image": {
       "type": "media",

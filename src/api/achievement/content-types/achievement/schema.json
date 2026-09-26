@@ -27,6 +27,9 @@
     "summary": {
       "type": "text"
     },
+    "description": {
+      "type": "richtext"
+    },
     "frontImage": {
       "type": "media",
       "multiple": false,
